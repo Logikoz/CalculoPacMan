@@ -1,0 +1,41 @@
+﻿<Window
+    x:Class="CalculoPacMan.ResolverCalculo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CalculoPacMan"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ResolverCalculo"
+    BorderBrush="Black"
+    BorderThickness="2"
+    Width="200"
+    Height="100"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel
+            Margin="10"
+            VerticalAlignment="Center"
+            Orientation="Vertical">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock x:Name="Numero1_txt" />
+
+                <TextBlock Text=" + " />
+
+                <TextBlock x:Name="Numero2_txt" />
+
+                <TextBlock Text=" = " />
+
+                <TextBox x:Name="Resultado_txt" Width="30" />
+            </StackPanel>
+            <Button
+                Margin="10"
+                Padding="5"
+                HorizontalAlignment="Center"
+                Click="Button_Click"
+                Content="Verificar" />
+        </StackPanel>
+    </Grid>
+</Window>
